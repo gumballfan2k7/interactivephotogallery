@@ -1,24 +1,33 @@
-body{
-		margin: 2%;
-		border: 1px solid black;
-		background-color: #b3b3b3;
+body {
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #b3b3b3;
 }
-#message{
-    line-height:100px;
-    text-align:center;
-		width: 575px;
+
+/* Changed from #message to #image */
+#image {
+    line-height: 100px;
+    text-align: center;
+    width: 575px;
     height: 100px;
-		border:5px solid black;
-		margin:0 auto;
-    margin-bottom:10px;
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
     background-color: #8e68ff;
     font-size: 150%;
+    /* Added to ensure background images scale and fit beautifully inside the box */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.preview{
-		width:10%;
-		margin-left:17%;
+
+.preview {
+    width: 10%;
+    margin-left: 17%;
     border: 10px solid black;
+    cursor: pointer; /* Makes it obvious the elements are interactive */
 }
-img{
-		width:95%;
+
+img {
+    width: 95%;
 }
